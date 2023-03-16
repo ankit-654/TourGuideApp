@@ -2,6 +2,7 @@
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Explore } from './Components/Explore/Explore';
+import { Plan } from './Components/Plan/Plan';
 // import Home from './Components/Home/Home';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
    <>
     <Router>
       <Routes>
-        {/* <Route path='/' element={<Home/>}  /> */}
+        <Route path='/plan' element={<Plan/>}  />
         <Route path='/' element={<Explore/>}   />
       </Routes>
    </Router>
