@@ -1,0 +1,20 @@
+@media screen and (max-width:480px){
+    .btn-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+    }
+    .btn-resp{
+        display: flex;
+        justify-content: center;
+    }
+    .input-button{
+        
+        background-color: aquamarine;
+        border-radius: 100px;
+        border: none;
+        height: 60px;
+        width: 160px;
+        text-size-adjust: 20px;
+    }
+}
