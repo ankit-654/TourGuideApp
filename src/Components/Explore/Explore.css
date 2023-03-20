@@ -224,6 +224,10 @@
 
 
 /* /////////////////////////// Mobile View */
+
+
+
+
 @media screen and (max-width:480px){
     .btn-grid{
         display: grid;
@@ -234,8 +238,9 @@
     .heading{
         
         padding: 30px;
-        padding-top: 60px;
+        padding-top: 40px;
         color: white;
+        font-size: 30px;
         letter-spacing: 2px;
         /* font-family: "Brush Script MT", cursive; */
         /* font-size: 100px; */
@@ -244,7 +249,7 @@
         font-size: 55px;
     }
     .head-bg{
-        height: 340px;
+        height: 440px;
         /* width: 480px; */
         padding-bottom: 10px;
         background-color: #4d836b;
@@ -257,7 +262,7 @@
         align-items: center;
     }
     .input-button{
-        margin: 5px;
+        margin: 8px;
         background-color: rgb(10, 10, 10);
         color: white;
         border-radius: 100px;
@@ -267,7 +272,7 @@
         transition: 0.1s ease-out;
         font-size: 1.06rem;
         font-family: times new roman ;
-        letter-spacing: 1.5px;
+        letter-spacing: 2px;
         
     }
     .input-button:hover{
@@ -275,15 +280,15 @@
        transition: 0.01s ease-out;
        background-color: #4d836b;
        color: white;
-       box-shadow:  1px 0px 8px 1px rgb(255, 253, 253)!important;
+       opacity: 0.9;
+       box-shadow:  1px 0px 8px 1px rgb(251, 251, 251)!important;
 
     }
 
     .trip-advertise{
            /* background: linear-gradient(to bottom right,  #8fc0a9 50%,#c0d8d6 20%); */
-         
-        background-color: black;
-        height: 300px;
+        /* background-color: black; */
+        height: 370px;
         width: auto;
     }
     .img-resp{
@@ -297,7 +302,14 @@
         width: 430px;
     }
     .main-container{
+        
+        background-repeat: no-repeat;
+        background-size: 480px 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 20px;
+        padding-top: 50px;
         height: 300px;
         width: auto;
         background-color: #000000;
@@ -305,13 +317,16 @@
     }
     
     .guider{
-        /* margin: 20px; */
-    position: absolute;
-    height: 220px;
-    width: 350px;
-    background-color: #030303;
-    transform-style: preserve-3d;
-    transition: 0.5s ease;
+        background-image: url("https://www.hdnicewallpapers.com/Walls/Thumb/Wonders/Beautiful_Taj_Mahal_HD_Photography.jpg");
+        background-repeat: no-repeat;
+        background-size: 460px 340px;
+        border-radius: 20px;
+        position: absolute;
+        height: 220px;
+        width: 350px;
+        /* background-color: #030303; */
+        transform-style: preserve-3d;
+        transition: 0.5s ease;
     }
     .guider:hover{
         transform: rotateY(180deg);
@@ -325,13 +340,12 @@
     backface-visibility: hidden;
     background-color: none;
     color: black;
-    /* padding-bottom: 5px; */
 }
 .front-side h4{
     font: icon;
     font-family: "Brush Script MT", cursive;
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     /* padding-top: 20px; */
 }
 
@@ -339,23 +353,21 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    /* margin-bottom: 5px; */
     backface-visibility: hidden;
-    background-color: #4d836b;
     border-radius: 20px 20px 20px 20px;
-    background-image: url("https://d3r8gwkgo0io6y.cloudfront.net/upload/NU/sun_set_at_brahmaputra_kesari.jpg");
+    background-image: none;
     background-repeat: no-repeat;
     background-size: 390px 230px;
-    /* image-orientation: flip; */
     color: black;
     transform: rotateY(180deg);
     text-align: center;
-    border-right: 0.2px solid white;
     }
     .back-side h3{
-        
+        font: icon;
+        font-family: "Brush Script MT", cursive;
+        font-size: 30px;
         padding-left: 10px;
-        padding-top: 20px;
+        padding-top: 10px;
         color: white;
     }
     .back-side h3 span{
@@ -372,7 +384,9 @@
         border: none;
         height: 60px;
         width: 150px;
-        font-size: 1rem;
+        font-size: 1.06rem;
+        font-family: times new roman ;
+        letter-spacing: 4px;
         
     }
     .input-back-button:hover{
@@ -388,13 +402,17 @@
     }
     
     .demo h4{
-        /* margin-top: ; */
-        font: icon;
+        font-size: 1.5rem;
+        font-family: "Brush Script MT", cursive;
         color: white;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
     }
     .demo h6{
-        font-size: 1rem;
-        font-family: monospace;
+        font: icon;
+        font-size: 1.4rem;
+        font-family: "Brush Script MT", cursive;
         color: white;
         margin-bottom: 10px;
         letter-spacing: 1px;
@@ -412,19 +430,66 @@
         justify-content: center;
         align-items: center;
         background-color: white;
-        border-radius: 50px;
-        height: 60px;
-        width: 200px;
-        font-size: 30px;
-        font-family: "Brush Script MT", cursive;
+        border-radius: 10px;
+        height: 50px;
+        width: 130px;
+        font-size: 20px;
+        font-family: times new roman ;
         letter-spacing: 2px;
+        border: none;
     }
     .explore-button:hover{
-        transform: scale(1.2);
-        transition: 0.7s ease-in-out;
+        box-shadow:  1px 0px 4px 1px rgb(255, 253, 253)!important;
+        letter-spacing: 2px;
+        transform: scale(0.9);
+        border: none;
+        transition: 0.1s ease-in-out;
     }
    .resp-carousel{
     display: flex;
     justify-content: center;
    }
+   .divider1{
+   
+    background-image: url(https://i0.wp.com/mumbai7.com/wp-content/uploads/2021/01/ING_62097_04835.jpg);
+    background-repeat: no-repeat;
+    background-size: 480px 400px;
+    filter: saturate(90%);
+   }
+   .filldivider1{
+    /* padding-top: 120px; */
+    height: 400px;
+    width: auto;
+    text-align: center;
+   }
+   .filldivider1 h3{
+    padding-top: 150px;
+    font: bolder;
+    font-size: 30px;
+    color: white;
+   }
+   .filldivider1 p{
+    /* padding-top: 50px; */
+    font: bolder;
+    font-size: 20px;
+    color: white;
+   }
+   .filldivider1 button{
+    height: 50px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    border-radius: 20px; 
+    letter-spacing: 3px;
+    border: none;
+    font-size: 16px;
+      
+  }
+  .filldivider1 button:hover{
+    font-size: 18px;
+    transform: scale(1.1);
+    transition: 0.2s ease;
+    background-color: rgb(249, 247, 247);
+    color: rgb(1, 1, 1);
+  }
 }

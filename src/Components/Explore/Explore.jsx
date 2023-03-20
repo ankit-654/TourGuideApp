@@ -1,17 +1,10 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import BottomNavigation from '@mui/material/BottomNavigation';
-import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ExploreIcon from '@mui/icons-material/Explore';
-import TravelExploreIcon from '@mui/icons-material/TravelExplore';
-import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
 import {  useNavigate } from 'react-router-dom';
 import './Explore.css';
-import RajasthanCarousel from '../RajasthanCarousel/RajasthanCarousel';
+import RajasthanCard from '../HomeCarousel/RajasthanCarousel';
+import UttrakhandCarousel from '../HomeCarousel/UttrakhandCarousel';
 export   const Explore= () =>{
   const [value, setValue] = React.useState(0);
- const navigate=useNavigate();
   return (
     <>  
       
@@ -39,8 +32,8 @@ export   const Explore= () =>{
        <div className='main-container'>
         <div className='guider'>
           <div className='front-side'>
-            <h4> A tour guide who knows their stuff can greatly enhance your adventure. ...</h4>
-            <input type="button"  value="Tap to see" className='input-button'/>
+            <h4> A tour guide who knows their stuff can greatly enhance your adventure.</h4>
+            <input type="button"  value="Tap to see" className='input-back-button'/>
           </div>
           <div className='back-side'>
           <h3>Its not about the destination ,its about the<span>-  Journey  -</span> </h3>
@@ -53,18 +46,27 @@ export   const Explore= () =>{
      <div className='demo'>
         <div className='demo2'>
         <h4>Explore "The Pink City" of India</h4>
-        <h6>The city is known for its bazaars,<br/> forts, temples, palaces, and <br/>wildlife sanctuaries</h6>
+        <h6>The city is known for its bazaars,forts,<br/> temples, palaces, and wildlife sanctuaries</h6>
           <img src='/assets/jaipur.jpg' className='div-image' alt="img"/>
           <input type="button" value="Explore" className='explore-button' />
         </div>
      </div>
      
       
-      <RajasthanCarousel/>
+      <RajasthanCard/>
+      <div className='divider1'>
+      <div className='filldivider1'>
+           <h3>One day in Mumbai City</h3>
+           <p>Must see places from ocean to beach "Mumbai mode : on "</p>
+           <button>Explore</button>
+      </div>
+      </div>
+      <UttrakhandCarousel/><hr/>
+      <RajasthanCard/>
       
      
 
-     <Box sx={{ bottom:0,left:"0",right:0,position:'fixed'}}>
+     {/* <Box sx={{ bottom:0,left:"0",right:0,position:'fixed'}}>
       <BottomNavigation
         showLabels
         value={value}
@@ -72,14 +74,13 @@ export   const Explore= () =>{
           setValue(newValue);
         }}
       >
-        {/* <BottomNavigationAction label="Profile" icon={<RestoreIcon />} /> */}
         <BottomNavigationAction label="Explore" icon={<ExploreIcon />} onClick={()=> navigate("#")}/>
         <BottomNavigationAction label="Search" icon={<TravelExploreIcon />} onClick={() => navigate("#")}/>
         <BottomNavigationAction label="My Plans" icon={<FavoriteIcon />} onClick={() => navigate("#")}/>
         <BottomNavigationAction label="Account" icon={<SentimentSatisfiedAltIcon />} onClick={() => navigate("#")}/>
       </BottomNavigation>
       
-    </Box>
+    </Box> */}
     </>
 
   );

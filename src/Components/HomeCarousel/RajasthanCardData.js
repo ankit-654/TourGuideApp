@@ -27,6 +27,7 @@ export const productData = [
     name: " The Pink City",
     ///word limit
     description: " Most beautiful and culturally rich cities in India",
+    location:"Jaipur,Rajasthan"
     },{
         id: 2,
     imageurl:
