@@ -99,11 +99,11 @@
         color:white;
         /* filter: saturate(80%); */
         transform: scale(0.9);
-        transition: ease-in;
+        transition: 0.3s ease-in;
         box-shadow:  1px 0px 8px 1px rgb(255, 253, 253)!important;
       }
       .App{
-        height: 650px;
+        height: 670px;
         border: 0.1px  black
       }
       .App h4{

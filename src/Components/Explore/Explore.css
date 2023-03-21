@@ -302,29 +302,24 @@
         width: 430px;
     }
     .main-container{
-        
-        background-repeat: no-repeat;
-        background-size: 480px 350px;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px;
-        padding-top: 50px;
+        padding-top: 38px;
         height: 300px;
         width: auto;
-        background-color: #000000;
+        background-color: #f8f8f8;
         text-align: center;
     }
     
     .guider{
         background-image: url("https://www.hdnicewallpapers.com/Walls/Thumb/Wonders/Beautiful_Taj_Mahal_HD_Photography.jpg");
         background-repeat: no-repeat;
-        background-size: 460px 340px;
+        background-size: 350px 300px;
         border-radius: 20px;
         position: absolute;
         height: 220px;
         width: 350px;
-        /* background-color: #030303; */
         transform-style: preserve-3d;
         transition: 0.5s ease;
     }
@@ -346,7 +341,6 @@
     font-family: "Brush Script MT", cursive;
     color: white;
     font-size: 30px;
-    /* padding-top: 20px; */
 }
 
 .back-side{
@@ -378,8 +372,8 @@
         font-family: "Brush Script MT", cursive
     }
     .input-back-button{
-        background-color: black;
-        color: white;
+        background-color: rgb(249, 246, 246);
+        color: rgb(5, 4, 4);
         border-radius: 100px;
         border: none;
         height: 60px;
@@ -397,7 +391,7 @@
         justify-content: center;
         /* align-items: center; */
         background-color: #000000;
-        height: 500px;
+        height: 450px;
         width: auto;
     }
     
@@ -457,7 +451,6 @@
     filter: saturate(90%);
    }
    .filldivider1{
-    /* padding-top: 120px; */
     height: 400px;
     width: auto;
     text-align: center;
@@ -465,20 +458,19 @@
    .filldivider1 h3{
     padding-top: 150px;
     font: bolder;
-    font-size: 30px;
+    font-size: 35px;
     color: white;
    }
    .filldivider1 p{
-    /* padding-top: 50px; */
     font: bolder;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
    }
    .filldivider1 button{
     height: 50px;
     width: 120px;
-    background-color: black;
-    color: white;
+    background-color: rgb(251, 248, 248);
+    color: rgb(0, 0, 0);
     border-radius: 20px; 
     letter-spacing: 3px;
     border: none;
@@ -489,7 +481,14 @@
     font-size: 18px;
     transform: scale(1.1);
     transition: 0.2s ease;
-    background-color: rgb(249, 247, 247);
-    color: rgb(1, 1, 1);
+    background-color: black;
+    color: white;
   }
+  .divider2{
+   
+    background-image: url("https://assets-news.housing.com/news/wp-content/uploads/2022/08/11203201/ladakh-sightseeing-and-things-to-do-feature-compressed.jpg");
+    background-repeat: no-repeat;
+    background-size: 480px 400px;
+    filter: saturate(50%);
+   }
 }

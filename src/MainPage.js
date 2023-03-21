@@ -7,7 +7,6 @@ import ExploreIcon from '@mui/icons-material/Explore';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
 import { Outlet, useNavigate } from 'react-router-dom';
-import { Explore } from './Components/Explore/Explore';
 export default function MainPage(){
     const [value, setValue] = React.useState(0);
     const navigate=useNavigate();
@@ -15,8 +14,8 @@ export default function MainPage(){
         <>
        
         <Outlet/>
-        <Explore/>
-            <Box sx={{ bottom:0,left:"0",right:0,position:'fixed'}}>
+        {/* <Explore/> */}
+            <Box sx={{ bottom:0,left:"0",right:0,position:'fixed',backgroundColor:"black"}} >
       <BottomNavigation
         showLabels
         value={value}
@@ -27,7 +26,7 @@ export default function MainPage(){
         <BottomNavigationAction label="Explore" icon={<ExploreIcon />} onClick={() => navigate('/explore')}/>
         <BottomNavigationAction label="Search" icon={<TravelExploreIcon />} onClick={() => navigate("")}/>
         <BottomNavigationAction label="My Plans" icon={<FavoriteIcon />} onClick={() => navigate("/plan")}/>
-        <BottomNavigationAction label="Account" icon={<SentimentSatisfiedAltIcon />} onClick={() => navigate("/account")}/>
+        <BottomNavigationAction label="Profile" icon={<SentimentSatisfiedAltIcon />} onClick={() => navigate("/profile")}/>
       </BottomNavigation>
       
     </Box>

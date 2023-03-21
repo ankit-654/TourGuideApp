@@ -4,6 +4,7 @@ import './App.css';
 import Account from './Components/Account/Account';
 import { Explore } from './Components/Explore/Explore';
 import { Plan } from './Components/Plan/Plan';
+import Profile from './Components/Profile/Profile';
 import MainPage from './MainPage';
 // import Home from './Components/Home/Home';
 
@@ -18,7 +19,7 @@ function App() {
         <Route path='/' element={<MainPage/>}>
         <Route path='explore' element={<Explore/>}/>
         <Route path='plan' element={<Plan/>}  />
-        <Route path='account' element={<Account/>}/>
+        <Route path='profile' element={<Profile/>}/>
         </Route>
       </Routes>
    </Router>

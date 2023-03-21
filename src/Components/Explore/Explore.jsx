@@ -1,10 +1,9 @@
 import * as React from 'react';
-import {  useNavigate } from 'react-router-dom';
 import './Explore.css';
 import RajasthanCard from '../HomeCarousel/RajasthanCarousel';
 import UttrakhandCarousel from '../HomeCarousel/UttrakhandCarousel';
 export   const Explore= () =>{
-  const [value, setValue] = React.useState(0);
+  // const [value, setValue] = React.useState(0);
   return (
     <>  
       
@@ -61,7 +60,14 @@ export   const Explore= () =>{
            <button>Explore</button>
       </div>
       </div>
-      <UttrakhandCarousel/><hr/>
+      <UttrakhandCarousel/>
+      <div className='divider2'>
+      <div className='filldivider1'>
+           <h3>Trip to Ladakh</h3>
+           <p>The heaven of India Leh Ladakh <br/>"Close to Heaven ,Down to Earth"</p>
+           <button>Explore</button>
+      </div>
+      </div>
       <RajasthanCard/>
       
      
