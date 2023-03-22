@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import reportWebVitals from './reportWebVitals';
+// import PlanCard from './Components/Plan/PlanCard';
 // import Home from './Components/Home/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,6 +12,7 @@ root.render(
   <React.StrictMode>
     <App />
     {/* <Home/> */}
+    {/* <PlanCard/> */}
   </React.StrictMode>
 );
 

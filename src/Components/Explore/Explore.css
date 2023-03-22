@@ -232,37 +232,30 @@
     .btn-grid{
         display: grid;
         grid-template-columns: auto auto;
-        /* grid-columm-sp */
         width: 100%;
     }
     .heading{
-        
         padding: 30px;
         padding-top: 40px;
         color: white;
         font-size: 30px;
         letter-spacing: 2px;
-        /* font-family: "Brush Script MT", cursive; */
-        /* font-size: 100px; */
     }
     .explore-head{
-        font-size: 55px;
+        font-size: 60px;
     }
     .head-bg{
         height: 440px;
-        /* width: 480px; */
-        padding-bottom: 10px;
         background-color: #4d836b;
     }
     .resp-button{
-        /* margin: 20px; */
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .input-button{
-        margin: 8px;
+        margin: 10px;
         background-color: rgb(10, 10, 10);
         color: white;
         border-radius: 100px;
@@ -270,7 +263,7 @@
         height: 60px;
         width: 150px;
         transition: 0.1s ease-out;
-        font-size: 1.06rem;
+        font-size: 1.065rem;
         font-family: times new roman ;
         letter-spacing: 2px;
         
@@ -282,12 +275,10 @@
        color: white;
        opacity: 0.9;
        box-shadow:  1px 0px 8px 1px rgb(251, 251, 251)!important;
-
     }
 
     .trip-advertise{
-           /* background: linear-gradient(to bottom right,  #8fc0a9 50%,#c0d8d6 20%); */
-        /* background-color: black; */
+        background-color: #000000;
         height: 370px;
         width: auto;
     }
@@ -308,7 +299,7 @@
         padding-top: 38px;
         height: 300px;
         width: auto;
-        background-color: #f8f8f8;
+        background-color: #000000;
         text-align: center;
     }
     
@@ -396,8 +387,9 @@
     }
     
     .demo h4{
-        font-size: 1.5rem;
-        font-family: "Brush Script MT", cursive;
+        font-size: 1.1rem;
+        font-family: monospace;
+        /* font-family: "Brush Script MT", cursive; */
         color: white;
         margin-bottom: 10px;
         letter-spacing: 1px;
@@ -447,11 +439,11 @@
    
     background-image: url(https://i0.wp.com/mumbai7.com/wp-content/uploads/2021/01/ING_62097_04835.jpg);
     background-repeat: no-repeat;
-    background-size: 480px 400px;
+    background-size: 480px 450px;
     filter: saturate(90%);
    }
    .filldivider1{
-    height: 400px;
+    height: 450px;
     width: auto;
     text-align: center;
    }

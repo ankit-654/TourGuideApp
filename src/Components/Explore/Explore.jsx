@@ -25,9 +25,6 @@ export   const Explore= () =>{
       </div>
       
       <div className='trip-advertise'>
-       {/* <div className='img-resp'>
-        <img className='image' src='/assets/img.png' alt='img'/>
-       </div> */}
        <div className='main-container'>
         <div className='guider'>
           <div className='front-side'>
