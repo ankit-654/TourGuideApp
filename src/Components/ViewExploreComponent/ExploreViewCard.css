@@ -1,0 +1,71 @@
+@media screen and (max-width:480px) {
+    .ec{
+        background-color: rgb(238, 244, 244);
+        height: 800px;
+        /* margin: 15px; */
+        border-radius: 20px;
+    }
+    .ec-grid{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        width: 100%;
+        height: 70px;
+    }
+    .ec-g-resp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ec-g-resp p{
+        font-size: 22px;
+        letter-spacing: 3px;
+        /* width: 150px ; */
+    }
+    .head-icon{
+        border-radius: 5px;
+        height: 30px;
+        width: 35px;
+    }
+    .ec-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        
+    }
+    .ec-img{
+        height: 200px;
+        width: auto;
+        border-radius: 15px;
+    }
+    .ec-name{
+        margin: 10px;
+        border-bottom: 0.1px solid rgb(177,177,177);
+        
+    }
+    .ec-location{
+        margin: 10px;
+        border-bottom: 0.1px solid rgb(177,177,177);
+        
+    }
+    .ec-desc{
+        margin: 10px;
+        border-bottom: 0.1px solid rgb(177,177,177);
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        /* width: 480px; */
+        text-align: center;
+    }
+    .ec-about{
+        margin: 10px;
+        border-bottom: 0.1px solid rgb(177,177,177);
+        display: flex;
+        justify-content: center;
+    }
+    .ec-rating{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

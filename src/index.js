@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import reportWebVitals from './reportWebVitals';
+import ExploreViewCard from './Components/ViewExploreComponent/ExploreViewCard';
 // import PlanCard from './Components/Plan/PlanCard';
 // import Home from './Components/Home/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <ExploreViewCard/>
     {/* <Home/> */}
     {/* <PlanCard/> */}
   </React.StrictMode>
