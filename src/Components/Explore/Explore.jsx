@@ -8,23 +8,22 @@ export   const Explore= () =>{
     <>  
       
       <div className='head-bg'>
-       <div className='heading'>
-       <h1>Explore</h1>
-       </div>
-      <div className='resp-button'>
-      <div className='btn-grid'>
-        <div>
-        <input type="button" value="Hotels" className='input-button'  />
-        <input type="button" value="Flights" className='input-button'  />
-        <input type="button" value="Restaurants" className='input-button'  />
-        <input type="button" value="Things to do" className='input-button'  />
-        
-        </div>
-      </div>
-      </div>
+          <div className='heading'>
+          <h1>Explore</h1>
+          </div>
+            <div className='resp-button'>
+              <div className='btn-grid'>
+                <div>
+                <input type="button" value="Hotels" className='input-button'  />
+                <input type="button" value="Flights" className='input-button'  />
+                <input type="button" value="Restaurants" className='input-button'  />
+                <input type="button" value="Things to do" className='input-button'  />
+                </div>
+              </div>
+            </div>
       </div>
       
-      <div className='trip-advertise'>
+      {/* <div className='trip-advertise'>
        <div className='main-container'>
         <div className='guider'>
           <div className='front-side'>
@@ -37,12 +36,12 @@ export   const Explore= () =>{
           </div>
         </div>
        </div>
-      </div>
+      </div> */}
       
      <div className='demo'>
         <div className='demo2'>
-        <h4>Explore "The Pink City" of India</h4>
-        <h6>The city is known for its bazaars,forts,<br/> temples, palaces, and wildlife sanctuaries</h6>
+          <h4>Explore "The Pink City" of India</h4>
+          <h6>The city is known for its bazaars,forts,<br/> temples, palaces, and wildlife sanctuaries</h6>
           <img src='/assets/jaipur.jpg' className='div-image' alt="img"/>
           <input type="button" value="Explore" className='explore-button' />
         </div>
@@ -51,19 +50,19 @@ export   const Explore= () =>{
       
       <RajasthanCard/>
       <div className='divider1'>
-      <div className='filldivider1'>
-           <h3>One day in Mumbai City</h3>
-           <p>Must see places from ocean to beach "Mumbai mode : on "</p>
-           <button>Explore</button>
-      </div>
+        <div className='filldivider1'>
+            <h3>One day in Mumbai City</h3>
+            <p>Must see places from ocean to beach "Mumbai mode : on "</p>
+            <button>Explore</button>
+        </div>
       </div>
       <UttrakhandCarousel/>
       <div className='divider2'>
-      <div className='filldivider1'>
-           <h3>Trip to Ladakh</h3>
-           <p>The heaven of India Leh Ladakh <br/>"Close to Heaven ,Down to Earth"</p>
-           <button>Explore</button>
-      </div>
+        <div className='filldivider1'>
+            <h3>Trip to Ladakh</h3>
+            <p>The heaven of India Leh Ladakh <br/>"Close to Heaven ,Down to Earth"</p>
+            <button>Explore</button>
+        </div>
       </div>
       <RajasthanCard/>
       
