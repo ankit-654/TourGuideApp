@@ -2,6 +2,7 @@
 import './MyPlan.css'
 import './PlanCard.css'
 import PlanCard from './PlanCard'
+import BottomBar from '../BottomBar'
 export  const MyPlan =() => {
     return(
         <>
@@ -15,7 +16,7 @@ export  const MyPlan =() => {
            <PlanCard/>
            <PlanCard/>
            </div>
-            
+            <BottomBar/>
         </>
     )
 }

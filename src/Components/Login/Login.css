@@ -1,0 +1,94 @@
+@media screen and (max-width:480px) {
+    .login-box{
+        text-align: center;
+        font-family: monospace;
+        font-size: 25px;
+        height: 950px;
+        background-color: rgb(209, 233, 242);
+    }
+    .login-i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login-i-resp{
+        height: 350px;
+        width: 350px;
+    }
+    .input-box{
+        display: flex;
+        justify-content: center;
+        width: auto;
+        margin: 20px;
+        height: 500px;
+    }
+    .input-content{
+        border-radius: 20px;
+        background-color: rgb(246, 247, 248);
+        background: linear-gradient( to left bottom right rgb(1, 30, 41) 50%);
+        row-gap: 20px;
+        gap: 100px;
+    }
+    .form-control{
+        border: none;
+        margin: 10px;
+        height: 65px;
+        width: 320px;
+        row-gap: 20px;
+        border-radius: 30px;
+        font-size: 23px ;
+        background-color: rgb(1, 30, 41);
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+    .form-control:hover{
+        transition: 1s ease;
+        transform: scale(1.02);
+        border-radius: 20px;
+        border: 0.1px solid white;
+        background-color: white;
+        color: black;
+    }
+    .login-btn-grid{
+        margin-top: 20px;
+        /* margin-bottom: 20px; */
+        display: grid;
+        grid-template-columns: auto auto;
+        width: auto;
+    }
+    .login-btn-resp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-login{
+        margin: 10px;
+        height: 50px; width: 160px;
+        border: none;
+        border-radius: 10px;
+        font-size: 22px;
+        letter-spacing: 2px;
+        background-color:  rgb(209, 233, 242);
+    }
+    .btn-login:hover{
+        border: none;
+        border-radius: 10px;
+        font-size: 22px;
+        letter-spacing: 2px;
+        color: white;
+        background-color: rgb(7, 7, 7);
+    }
+    .btn-forget{
+        margin-top: 20px;
+        height: 50px; width: 300px;
+        border: none;
+        border-radius: 10px;
+        font-size: 22px;
+        letter-spacing: 2px;
+        background-color:  rgb(209, 233, 242);
+    }
+    
+    
+    
+}

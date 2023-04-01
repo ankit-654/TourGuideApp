@@ -1,12 +1,23 @@
 import * as React from 'react';
 import './Explore.css';
+import { PulseLoader } from 'react-spinners';
 import RajasthanCard from '../HomeCarousel/RajasthanCarousel';
 import UttrakhandCarousel from '../HomeCarousel/UttrakhandCarousel';
+import BottomBar from '../BottomBar';
 export   const Explore= () =>{
+  const [value, setValue] = React.useState(2);
+    const [hover, setHover] = React.useState(-1);
+    const [loading ,setLloading]=React.useState(false)
+    React.useEffect(()=>{
+      setLloading(true)
+      setTimeout(()=>{
+        setLloading(false)
+      },3000)
+    },[])
   // const [value, setValue] = React.useState(0);
   return (
     <>  
-      
+     
       <div className='head-bg'>
           <div className='heading'>
           <h1>Explore</h1>
@@ -37,7 +48,7 @@ export   const Explore= () =>{
         </div>
        </div>
       </div> */}
-      
+      {/* <a href='/demo'>Click</a> */}
      <div className='demo'>
         <div className='demo2'>
           <h4>Explore "The Pink City" of India</h4>
@@ -66,23 +77,8 @@ export   const Explore= () =>{
       </div>
       <RajasthanCard/>
       
-     
-
-     {/* <Box sx={{ bottom:0,left:"0",right:0,position:'fixed'}}>
-      <BottomNavigation
-        showLabels
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
-      >
-        <BottomNavigationAction label="Explore" icon={<ExploreIcon />} onClick={()=> navigate("#")}/>
-        <BottomNavigationAction label="Search" icon={<TravelExploreIcon />} onClick={() => navigate("#")}/>
-        <BottomNavigationAction label="My Plans" icon={<FavoriteIcon />} onClick={() => navigate("#")}/>
-        <BottomNavigationAction label="Account" icon={<SentimentSatisfiedAltIcon />} onClick={() => navigate("#")}/>
-      </BottomNavigation>
+   <BottomBar/>
       
-    </Box> */}
     </>
 
   );

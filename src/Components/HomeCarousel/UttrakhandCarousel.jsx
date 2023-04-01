@@ -16,7 +16,21 @@ export default function UttrakhandCarousel(){
         <>
            <div className="App">
             <h4>The very best of Uttrakhand</h4>
-            <Carousel showDots={true} responsive={responsive}>
+            <Carousel showDots={true} responsive={responsive}
+            swipeable={true}
+                draggable={true}
+                ssr={true}
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={2000}
+                keyBoardControl={true}
+                slidesToSlide={1}
+                customTransition="all .2"
+                transitionDuration={1000}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={[]}
+                dotListClass="custom-dot-list-style"
+                itemClass="carousel-item-padding-40-px">
                 {uttarkhand}
             </Carousel>
            </div>

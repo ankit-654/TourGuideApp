@@ -1,16 +1,34 @@
-
+import React from 'react';
+import BottomBar from '../BottomBar'
 import './Profile.css'
+import { PulseLoader } from 'react-spinners';
 // import ProfileData from './ProfileData'
 export default function Profile(props){
-        
+        const [value, setValue] = React.useState(2);
+    const [hover, setHover] = React.useState(-1);
+    const [loading ,setLloading]=React.useState(false)
+    React.useEffect(()=>{
+      setLloading(true)
+      setTimeout(()=>{
+        setLloading(false)
+      },1500)
+    },[])
     return(
         <>   
-       
+        {
+          loading ? 
+          <PulseLoader
+          className='ec-loader'
+            color={"#36d7b7"}
+            loading={loading}
+            size={10}
+          />
+            :
            <div className='profile'>
            <div className='head-grid'>
-                   <div className='resp-div'><a href='#'><img className='head-icon' src='./assets/prev.png' alt='img'/></a></div>
+                   <div className='resp-div'><a><img className='head-icon' src='./assets/prev.png' alt='img'/></a></div>
                    <div className='resp-div'><span>Profile</span></div>
-                   <div className='resp-div'><a href='#'><img className='head-icon' src='./assets/menui.png' alt='img'/></a></div>
+                   <div className='resp-div'><a><img className='head-icon' src='./assets/menui.png' alt='img'/></a></div>
            </div>
            {/* /// PROFILE PIC VIEW */}
            <div className='img-resp'>
@@ -65,6 +83,9 @@ export default function Profile(props){
                 </div>
             </div>
         </div> 
+        }
+        <BottomBar/>
+        
         </>
     )
 }
